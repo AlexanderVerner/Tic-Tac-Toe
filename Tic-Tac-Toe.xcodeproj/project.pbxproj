@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11DA45ED24A8CC06009C70C4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA45EC24A8CC06009C70C4 /* main.swift */; };
+		11DA45F624A8E115009C70C4 /* Drow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA45F524A8E115009C70C4 /* Drow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		11DA45E924A8CC06009C70C4 /* Tic-Tac-Toe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Tic-Tac-Toe"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DA45EC24A8CC06009C70C4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		11DA45F524A8E115009C70C4 /* Drow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				11DA45EC24A8CC06009C70C4 /* main.swift */,
+				11DA45F524A8E115009C70C4 /* Drow.swift */,
 			);
 			path = "Tic-Tac-Toe";
 			sourceTree = "<group>";
@@ -121,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11DA45ED24A8CC06009C70C4 /* main.swift in Sources */,
+				11DA45F624A8E115009C70C4 /* Drow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
