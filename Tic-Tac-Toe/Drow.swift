@@ -12,7 +12,7 @@ func Draw() {
     var row0 = "{0}  \(fieldArr[0][0]) | \(fieldArr[0][1]) | \(fieldArr[0][2]) "
     var row1 = "{1}  \(fieldArr[1][0]) | \(fieldArr[1][1]) | \(fieldArr[1][2]) "
     var row2 = "{2}  \(fieldArr[2][0]) | \(fieldArr[2][1]) | \(fieldArr[2][2]) "
-    let separators = "    ---+---+---"
+    let separators = "--- ---+---+---"
     let navigationHelper = "    {0}|{1}|{2}"
     print("""
             \(navigationHelper)
