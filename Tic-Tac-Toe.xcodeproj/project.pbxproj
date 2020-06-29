@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112C2C8724AA710B00981D84 /* SetX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C2C8624AA710B00981D84 /* SetX.swift */; };
+		112C2C8B24AA72ED00981D84 /* SetO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112C2C8A24AA72ED00981D84 /* SetO.swift */; };
 		11DA45ED24A8CC06009C70C4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA45EC24A8CC06009C70C4 /* main.swift */; };
 		11DA45F624A8E115009C70C4 /* Drow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA45F524A8E115009C70C4 /* Drow.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		112C2C8624AA710B00981D84 /* SetX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetX.swift; sourceTree = "<group>"; };
+		112C2C8A24AA72ED00981D84 /* SetO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetO.swift; sourceTree = "<group>"; };
 		11DA45E924A8CC06009C70C4 /* Tic-Tac-Toe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Tic-Tac-Toe"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DA45EC24A8CC06009C70C4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		11DA45F524A8E115009C70C4 /* Drow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drow.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 			children = (
 				11DA45EC24A8CC06009C70C4 /* main.swift */,
 				11DA45F524A8E115009C70C4 /* Drow.swift */,
+				112C2C8624AA710B00981D84 /* SetX.swift */,
+				112C2C8A24AA72ED00981D84 /* SetO.swift */,
 			);
 			path = "Tic-Tac-Toe";
 			sourceTree = "<group>";
@@ -123,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112C2C8B24AA72ED00981D84 /* SetO.swift in Sources */,
 				11DA45ED24A8CC06009C70C4 /* main.swift in Sources */,
+				112C2C8724AA710B00981D84 /* SetX.swift in Sources */,
 				11DA45F624A8E115009C70C4 /* Drow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,8 +12,7 @@ var fieldArr = Array(repeating: Array(repeating: " ", count: 3), count:  3)
 var gameOn: Bool = true
 var row:Int = 0
 var col:Int = 0
-//var coordinates = Array(arrayLiteral: 0, 0)
-//var coord1: String? = Array()
+//Create to dictinary with english localization
 let messagesEn = [
 "Welcome to the game Tic Tac Toe. Good game!",
 "What is the name of the first player?",
@@ -27,19 +26,13 @@ print("""
 """)
 print(messagesEn[1])
 var firstPlayer: String? = readLine()
-//print(messagesEn[2])
-//var secondPlayer: String? = readLine()
+print(messagesEn[2])
+var secondPlayer: String? = readLine()
+Draw()
 repeat {
+    FirstPlayerX()
     Draw()
-    print("Move player \(firstPlayer!)")
-    var coordinates = readLine()?.split {$0 == ","}.map (String.init)
-    row = Int(coordinates![0])!
-    col = Int(coordinates![1])!
-    fieldArr[row][col] = "X"
+    SecondPlayerO()
     Draw()
     gameOn = false
 } while gameOn == true
-//fieldArr[1][1] = "X"
-//Draw()
-//fieldArr[0][0] = "0"
-//Draw()
