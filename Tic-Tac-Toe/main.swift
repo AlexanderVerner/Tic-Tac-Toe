@@ -12,7 +12,7 @@ var fieldArr = Array(repeating: Array(repeating: " ", count: 3), count:  3)
 var gameOn: Bool = true
 var row:Int = 0
 var col:Int = 0
-//Create to dictinary with english localization
+//Create to dictionary with english localization
 let messagesEn = [
 "Welcome to the game Tic Tac Toe. Good game!",
 "What is the name of the first player?",
@@ -34,5 +34,4 @@ repeat {
     Draw()
     SecondPlayerO()
     Draw()
-    gameOn = false
 } while gameOn == true

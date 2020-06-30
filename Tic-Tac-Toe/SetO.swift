@@ -9,9 +9,12 @@
 import Foundation
  
 func SecondPlayerO () {
-    print("Move player \(secondPlayer!)")
-    var coordinates = readLine()?.split {$0 == ","}.map (String.init)
-    row = Int(coordinates![0])!
-    col = Int(coordinates![1])!
-    fieldArr[row][col] = "O"
+    if gameOn == true {
+        print("Move player \(secondPlayer!)")
+        var coordinates = readLine()?.split {$0 == ","}.map (String.init)
+        row = Int(coordinates![0])!
+        col = Int(coordinates![1])!
+        fieldArr[row][col] = "O"
+        isWinner()
+    }
 }
