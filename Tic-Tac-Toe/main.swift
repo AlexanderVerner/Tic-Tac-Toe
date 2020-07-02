@@ -12,6 +12,8 @@ var fieldArr = Array(repeating: Array(repeating: " ", count: 3), count:  3)
 var gameOn: Bool = true
 var row:Int = 0
 var col:Int = 0
+var firstPlayer: String? = nil
+var secondPlayer: String? = nil
 //Create to dictionary with english localization
 let messagesEn = [
 "Welcome to the game Tic Tac Toe. Good game!",
@@ -24,10 +26,16 @@ print("""
 
   ******************
 """)
+repeat{
 print(messagesEn[1])
-var firstPlayer: String? = readLine()
+firstPlayer = readLine()
+} while firstPlayer == ""
+
+repeat{
 print(messagesEn[2])
-var secondPlayer: String? = readLine()
+secondPlayer = readLine()
+} while secondPlayer == ""
+
 Draw()
 repeat {
     FirstPlayerX()
