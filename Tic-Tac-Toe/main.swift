@@ -34,20 +34,25 @@ print("""
 
   ******************
 """)
+//Ask of name first player
 repeat{
 print(messagesEn[1])
 firstPlayer = readLine()
 } while firstPlayer == ""
-
+//Ask of name second player
 repeat{
 print(messagesEn[2])
 secondPlayer = readLine()
 } while secondPlayer == ""
-
+//Show the starting game field
 Draw()
 repeat {
+//    Set X on game field
     FirstPlayerX()
+//    Show updated field
     Draw()
+//    Set O on game field
     SecondPlayerO()
+//    Show updated field again
     Draw()
 } while gameOn == true

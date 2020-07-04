@@ -14,7 +14,9 @@ func isWinner(){
        fieldArr[1][0] == "X" &&  fieldArr[1][1] == "X" && fieldArr[0][2] == "X" ||
        fieldArr[2][0] == "X" &&  fieldArr[2][1] == "X" && fieldArr[2][2] == "X"
     {
+//        Output the winner's name
         print("\(String(firstPlayer!)) \(messagesEn[3])")
+//        Change are bool variable for close are game
         gameOn = false
     }
     if fieldArr[0][0] == "O" &&  fieldArr[0][1] == "O" && fieldArr[0][2] == "O" ||
