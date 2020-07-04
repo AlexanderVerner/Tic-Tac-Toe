@@ -11,7 +11,7 @@ import Foundation
 func SecondPlayerO () {
     if gameOn == true {
         repeat {
-        print("Move player \(secondPlayer!). You should write in the form of '0,1' where '0' is a row and '1' is a column")
+        print("\(messagesEn[4]) \(secondPlayer!). \(messagesEn[5])")
         let coordinates = readLine()?.split {$0 == ","}.map (String.init)
         row = Int(coordinates![0])!
         col = Int(coordinates![1])!
@@ -19,7 +19,7 @@ func SecondPlayerO () {
         fieldArr[row][col] = "O"
         isWinner()
         } else {
-            print("This cell is already occupied!")
+            print(messagesEn[6])
             }
         } while fieldArr[row][col] == " "
     }
