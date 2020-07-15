@@ -11,6 +11,8 @@ import Foundation
 var fieldArr = Array(repeating: Array(repeating: " ", count: 3), count:  3)
 //Create bool variable for checking continue or closing the game
 var gameOn: Bool = true
+//Create bool variable for checking continue or closing the round
+var roundOn: Bool = true
 //Variable for rows storage
 var row:Int = 0
 //Variable for columns storage
@@ -26,7 +28,8 @@ let messagesEn = [
 "is winner in this round!",
 "Move player",
 "You should write in the form of '0,1' where '0' is a row and '1' is a column",
-"This cell is already occupied!"
+"This cell is already occupied!",
+"Do you want replay the game? Enter y for play again."
 ]
 //Initial message
 print("""
@@ -44,6 +47,7 @@ repeat{
 print(messagesEn[2])
 secondPlayer = readLine()
 } while secondPlayer == ""
+repeat {
 //Show the starting game field
 Draw()
 repeat {
@@ -56,3 +60,12 @@ repeat {
 //    Show updated field again
     Draw()
 } while gameOn == true
+print(messagesEn[7])
+    if readLine() == "y" {
+//        Cleaned game field
+    fieldArr = Array(repeating: Array(repeating: " ", count: 3), count:  3)
+    gameOn = true
+} else {
+        roundOn = false
+}
+} while roundOn == true
